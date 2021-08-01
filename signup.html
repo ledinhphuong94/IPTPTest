@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <meta name="theme-color" content="#000">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <!-- manifest -->
+    <link rel="manifest" href="./webManifest.json">
+    <meta name="apple-mobile-web-app-status-bar" content="#000">
+
+    <!-- Link to css style files  -->
+    <!-- <link rel="stylesheet" href="./src/css/style.css"> -->
+</head>
+
+<body class="login-signup-body">
+    <div class="login__signup">
+        <!-------------- Signup section ------------------>
+        <div id="signup-user" class="login__signup__form">
+            <h2 class="login__signup__header">Sign Up</h2>
+            <small class="asterisk">Asterisk (*) section is required</small>
+            <form id="signup-form">
+
+                <div class="signup__name">
+                    <label for="signup_input-name" class="form-label">* Fullname</label>
+                    <input type="text" class="signup__input form-input" id="signup_input-name" placeholder="Fullname"
+                        name="signUpFullName">
+                    <div id="signUpFullName-notice" class="form-text notice"></div>
+                </div>
+                <div class="signup__user">
+                    <label for="signup_input-username" class="form-label">* Username</label>
+                    <input type="text" class="signup__input form-input" id="signup_input-username"
+                        placeholder="Username" name="signUpUsername" name="username">
+                    <div id="signUpUsername-notice" class="form-text notice"></div>
+                </div>
+                <div class="signup__password">
+                    <label for="signup__input-password" class="form-label">* Password</label>
+                    <input type="password" class="signup__input form-input" id="signup__input-password"
+                        name="signUpPassword" placeholder="Your password">
+                    <div id="signUpPassword-notice" class="form-text notice"></div>
+                </div>
+
+                <button id="signup__submit" class="button-style2" disabled>Register</button>
+                <div id="signup__notice"></div>
+                <div class="switch__login__signup">Already have account? <a href="./login.html">Sign in</a></div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- <script type="module" src="./swRegister.js"></script> 
+    <script type="module" src="./src/js/signup.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="phuong">
+<meta name="theme-color" content="#000">
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<title>Index Page</title>
+<!-- Manifest -->
+<link rel="manifest" href="./webManifest.json">
+<meta name="apple-mobile-web-app-status-bar" content="#000">
+
+<!-- Link to css style files  -->
+<!-- <link rel="stylesheet" href="./src/css/style.css"> -->
+</head>
+
+<body class="index-page-body">
+  <div id="index-page">
+    <h2>Index Page</h2>
+    <div>
+      <!-- welcome section -->
+      <div class="flex-container">
+        <p class="welcome-name">Good Day, <span class="index-page__name"></span> !</p>
+        <!-- Create note button-->
+
+        <button id="create-note-button" type="button" class='button-style1 addNote-button'>
+          Create New Note</button>
+      </div>
+      <!-- table -->
+      <table id="table-note">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th class="table__note-tab">Note</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- render data -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Pop up section -->
+    <div id="addNote" class="addNote__active">
+      <!-- <div class="addNote__background"></div> -->
+      <div class="addNote__content">
+        <div class="addNote__content__header">
+          <h5 class="modal-title" id="addNote__header">ADD NOTE</h5>
+        </div>
+        <div class="addNote__content__body">
+
+          <div class="addNote__content__body-floating">
+            <label for="pickDate">Choose date:</label>
+            <input type="date" id="pickDate" placeholder="Choose your date"></input>
+          </div>
+          <div class="addNote__content__body-floating">
+            <label for="floatingTextarea">Write your note below:</label>
+            <textarea id="floatingTextarea" placeholder="Write something here..."></textarea>
+          </div>
+
+        </div>
+        <div class="addNote__content__footer">
+          <button id="add-note__close-button" class="button-style1 addNote__close" type="button">Close</button>
+          <button id="add-note__save-button" class='button-style1 addNote-button' type="button" disabled>
+            📥
+            Save
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="indexNotification" class="note-notification"></div>
+
+    <div class="logout-container">
+      <button id="logout-button" type="button" class="button-style1">Log out</button>
+    </div>
+  </div>
+
+  <!-- <script type="module" src="./swRegister.js"></script>
+  <script type="module" src="./src/js/indexPage.js"></script> -->
+
+</body>
+
+</html>

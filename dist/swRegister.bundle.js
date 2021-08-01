@@ -1,0 +1,1 @@
+"serviceWorker"in navigator&&window.addEventListener("load",(()=>{navigator.serviceWorker.register("./sw.bundle.js").then((e=>console.log("ServiceWorker Registered",e))).catch((e=>console.log(`ServiceWorker Error : ${e}`)))}));
